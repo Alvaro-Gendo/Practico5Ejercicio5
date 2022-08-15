@@ -12,17 +12,18 @@
     <title>Cronómetro</title>
 </head>
 <body>
-    <main class="container text-center mt-5">
-        <section class="row">
-            <p id="hora" class="col-4">00</p>
-            <p id="minutos" class="col-4">00</p>
-            <p id="segundos" class="col-4">00</p>
+    <main class="container text-center mt-5 cronometro">
+        <section class="d-flex justify-content-center display-3">
+            <p id="Horas">00:</p>
+            <p id="Minutos">00:</p>
+            <p id="Segundos">00:</p>
+            <p id="Centesimas">00</p>
         </section>
         <section class="mt-5">
-            <button class="btn btn-outline-dark" onclick="iniciar()">Iniciar</button>
-            <button class="btn btn-outline-dark" onclick="pausar()">Pausar</button>
-            <button class="btn btn-outline-dark" onclick="Continuar()">Continuar</button>
-            <button class="btn btn-outline-dark" onclick="reset()">Reiniciar</button>
+            <button class="btn btn-outline-dark" id="inicio" onclick="inicio()">Iniciar</button>
+            <button class="btn btn-outline-dark" id="pausar" onclick="pausar()">Pausar</button>
+            <button class="btn btn-outline-dark" id="continuar" onclick="inicio()">Continuar</button>
+            <button class="btn btn-outline-dark" id="reinicio" onclick="reinicio()">Reiniciar</button>
         </section>
     </main>
     <footer class="bg-dark text-center text-white mt-5">
